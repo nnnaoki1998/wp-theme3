@@ -1,0 +1,392 @@
+/*
+Theme Name: Izakaya3
+Theme URI: https://test.sntsz20.com/
+Description: Izakaya3
+Author: Naoki Suyama
+Author URI: https://test.sntsz20.com/
+Version: 1.0
+*/
+
+body {
+  font-family: ten-mincho-text, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.y-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main */
+main {
+  float: right;
+  width: 100%;
+}
+
+#sec_top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+#sec_top h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  margin-top: -6.25vh;
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transition: bottom 0.3s;
+  z-index: 3;
+}
+
+.scrolldown:hover {
+  bottom: 4vh;
+}
+
+.scrolldown span {
+  font-size: 120%;
+}
+
+.scrolldown-arrow {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: auto;
+}
+
+.scrolldown-arrowline1 {
+  position: absolute;
+  width: 100%;
+  border-bottom: #ffffff 1px solid;
+  top: 50%;
+  left: 0%;
+  transform: rotateZ(90deg);
+  margin: 0;
+}
+
+.scrolldown-arrowline2 {
+  position: absolute;
+  width: 70%;
+  border-bottom: #ffffff 1px solid;
+  top: 75%;
+  left: -10%;
+  transform: rotateZ(45deg);
+  margin: 0;
+}
+
+.scrolldown-arrowline3 {
+  position: absolute;
+  width: 70%;
+  border-bottom: #ffffff 1px solid;
+  top: 75%;
+  left: 40%;
+  transform: rotateZ(-45deg);
+  margin: 0;
+}
+
+#sec_food,
+#sec_sake {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+#sec_food {
+  background-image: url(img/steak.jpg);
+}
+
+#sec_sake {
+  background-image: url(img/alcohol.jpeg);
+}
+
+#sec_food h1,
+#sec_sake h1 {
+  font-size: 350%;
+  margin-bottom: 4%;
+}
+
+.menulist {
+  height: 40vh;
+  overflow: auto;
+}
+
+.left-menulist,
+.right-menulist {
+  padding: 0 3%;
+}
+
+.menulist h3 {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.menulist ul {
+  margin-bottom: 40px;
+}
+
+.menulist dl {
+  overflow: hidden;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.menulist li {
+  border-top: #bbbbbb 1px solid;
+}
+
+.menulist li:last-child {
+  border-bottom: #bbbbbb 1px solid;
+}
+
+.menulist dt {
+  float: left;
+  margin: 0;
+}
+
+.menulist dd {
+  float: right;
+  margin: 0;
+}
+
+#sec_gallary {
+  position: relative;
+  height: 100vh;
+}
+
+.main-img {
+  position: relative;
+  width: 100%;
+}
+
+.main-img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.front-img {
+  z-index: 2;
+}
+
+.back-img {
+  z-index: 1;
+}
+
+.thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 18vh;
+  background-color: #0e0e0e;
+  overflow: auto;
+}
+
+.thumb-inner {
+  height: 100%;
+}
+
+.thumb img {
+  height: 100%;
+  filter: brightness(70%);
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.thumb img:hover {
+  filter: brightness(100%);
+}
+
+#sec_access {
+  background-image: url(img/pub_counter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height:100vh
+}
+
+#sec_access h1 {
+  font-size: 350%;
+  margin-bottom: 4%;
+}
+
+#sec_access h2 {
+  font-size: 120%;
+  margin-bottom: 1%;
+}
+
+#google_maps {
+  height: 40vh;
+  margin: 5% 7% 0;
+  filter: brightness(80%);
+}
+
+#side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #0e0e0e;
+  z-index: 4;
+}
+
+#side .inner {
+  text-align: center;
+}
+
+.logo {
+  width: 20%;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+#side nav {
+  display: inline-block;
+}
+
+#side nav ul {
+  margin: 0;
+  width: 60vw;
+}
+
+#side nav li {
+  display: inline-block;
+  width: 20%;
+}
+
+#side nav a {
+  width: 100%;
+  height: 50px;
+  font-size: 2.5vw;
+  color: #bbbbbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#side nav a:after {
+  position: absolute;
+  transition: height 0.3s, top 0.3s;
+  content: '';
+  width: 1px;
+  height: 0;
+  right: 0;
+  top: 50%;
+  background: #bbbbbb;
+}
+
+#side nav a:hover:after {
+  height: 100%;
+  top: 0;
+}
+
+/* sm */
+@media (min-width: 576px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+  .thumb {
+    width: 180px;
+    height: 100vh;
+  }
+  
+  .thumb img {
+    width: 100%;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .menulist {
+    height: 50vh;
+  }
+
+  #google_maps {
+    height: 50vh;
+    margin: 5% 5% 0;
+  }
+
+  #side {
+    width: 180px;
+    height: 100vh;
+  }
+  
+  .logo {
+    display: block;
+    width: auto;
+    margin: 0 10% 24%;
+  }
+
+  #side nav {
+    display: block;
+  }
+
+  #side nav ul {
+    width: auto;
+  }
+
+  #side nav li {
+    display: block;
+    width: 100%;
+  }
+
+  #side nav a {
+    font-size: 120%;
+  }
+
+  #side nav a:after {
+    transition: width 0.3s, right 0.3s;
+    width: 0;
+    height: 1px;
+    right: 50%;
+    top: 100%;
+  }
+  
+  #side nav a:hover:after {
+    width: 100%;
+    right: 0;
+    top: 100%;
+    height: 1px;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+}
